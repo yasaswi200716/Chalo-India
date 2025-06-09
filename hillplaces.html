@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore India - Featured Places</title>
+  <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Pragati+Narrow&display=swap" rel="stylesheet" />
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Pragati Narrow', sans-serif;
+  background: linear-gradient(to bottom right, #fff3e0, #ffe0b2);
+}
+a {
+    text-decoration: none;
+}
+
+.explore-section {
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explore-heading {
+  font-family: 'Yatra One', cursive;
+  font-size: 3em;
+  color: #bf360c;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 4px #ffcc80;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  width: 100%;
+  max-width: 1000px;
+  justify-items: center;
+}
+
+.grid-box {
+  background-color: #fff8e1;
+  width: 80%;
+  height: 300px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#box1 {
+    background-image: url(manalihill.jpeg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#box2 {
+    background-image: url(gulmarghill.jpeg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#box3 {
+    background-image: url(ootyhill.jpeg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#box4 {
+    background-image: url(munnarhill.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-box h2 {
+  font-family: 'Yatra One', cursive;
+  color: black;
+  font-size: 1.8em;
+  margin-top: 250px;
+}
+
+.grid-box p {
+  color: #5d4037;
+  font-size: 1.1em;
+}
+
+.grid-box:hover {
+  transform: scale(1.05);
+  background-color: #ffe082;
+}
+
+.details-box {
+  margin-top: 30px;
+  background-color: #fff3e0;
+  padding: 20px;
+  border-left: 6px solid #ff6f00;
+  border-radius: 10px;
+  max-width: 700px;
+  font-size: 1.1em;
+  color: #4e342e;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-box {
+    width: 90%;
+    height: 250px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <section class="explore-section">
+    <h1 class="explore-heading">🏔️ Explore Hill Stations of India</h1>
+    <div class="grid-container">
+        <a href="manali.html"><div class="grid-box" id="box1" onclick="showDetails('manali')">
+        <h2>Manali </h2>
+        <p> Kullu District, Himachal Pradesh</p>
+      </div></a>
+      <a href="gulmarg.html"><div class="grid-box" id="box2" onclick="showDetails('gulmarg')">
+        <h2>Gulmarg</h2>
+        <p>Baramulla District, Jammu and Kashmir</p>
+      </div></a>
+      <a href="ooty.html"><div class="grid-box" id="box3" onclick="showDetails('ooty')">
+        <h2>Ooty </h2>
+        <p>Nilgiri Hills, Tamil Nadu</p>
+      </div></a>
+      <a href="Munnar.html"><div class="grid-box" id="box4" onclick="showDetails('munnar')">
+        <h2>Munnar</h2>
+        <p>Idduki District, Kerala</p>
+      </div></a>
+    </div>
+    <div id="details-box" class="details-box hidden"></div>
+  </section>
+</body>
+
+</html>
