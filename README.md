@@ -69,6 +69,7 @@ Sailaja Reddy Nandyala
 • Wrote README.md and commit messages.
 
 📸 Screenshots
+![image alt](
 
 
 
