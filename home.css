@@ -130,32 +130,128 @@ footer {
   padding: 15px;
   font-size: 0.9rem;
 }
-/* ------------------ RESPONSIVE ------------------ */
+/* Responsive styles */
+
+/* Small devices (phones) */
 @media (max-width: 768px) {
+
   header {
     flex-direction: column;
-    text-align: center;
+    align-items: flex-start;
+    padding: 15px 20px;
   }
+
+  .web {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
   .nav-links {
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    width: 100%;
   }
-  #head {
-    flex-direction: column;
-  }
-  #wel {
-    font-size: 2.2rem;
-  }
-  #about {
-    font-size: 1.1rem;
-  }
-  #paragraph {
+
+  .nav-links li a {
     font-size: 1rem;
   }
-  .section-heading h1 {
+
+  #head {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #indimg {
+    margin: 0 auto 10px auto;
+  }
+
+  #wel {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  #about {
+    font-size: 1.2rem;
+    margin: 10px 20px;
+    text-align: center;
+  }
+
+  #paragraph {
+    margin: 20px;
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .category-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .category-card {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 20px;
+  }
+
+  .green-section {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .para, .thispara, .contact {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 15px 10px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  header {
+    padding: 15px 30px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .web {
     font-size: 2rem;
   }
-  .green-section h2, .para {
-    font-size: 1.2rem;
+
+  #wel {
+    font-size: 3.5rem;
+  }
+
+  #about {
+    font-size: 1.5rem;
+    margin: 0 50px;
+    text-align: center;
+  }
+
+  #paragraph {
+    margin: 20px 50px;
+    font-size: 1.1rem;
+  }
+
+  .category-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .category-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .green-section {
+    padding: 35px;
   }
 }
