@@ -73,7 +73,7 @@ Sailaja Reddy Nandyala
 
 
 🚀 Live Website
-➡️ GitHub Repository Link: 
+➡️ GitHub Repository Link: https://github.com/yasaswi200716/Chalo-India
 ➡️ Live Website (GitHub Pages): https://yasaswi200716.github.io/Chalo-India/
 
 ✅ Features Implemented
