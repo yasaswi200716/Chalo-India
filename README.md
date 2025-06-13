@@ -49,19 +49,25 @@ Contact Page	Contact details, social media
 ✅ Team Collaboration Plan for "Chalo India"
 Team Member	Role & Responsibility
 Yasaswi Maragada 
+
 🔸 Subpages Development Lead
 • Created all category subpages (Historical, Beaches, Temples, etc.)
 • Designed galleries, visitor info, images, and page-level responsiveness.
+
 Dhedeepya Avuthu
+
 🔸 Homepage & Navigation
 • Designed the main landing (index.html) page.
 • Created the categories page linking to your subpages.
 • Handled homepage styling and animations.
+
 Niharika	Vadithya 
+
 🔸 Forms & Interactivity
 • Created Login/Signup pages.
 • Implemented form validation with JavaScript.
 • Can add interactive elements to homepage (hover effects, dynamic buttons).
+
 Sailaja Reddy Nandyala
 🔸 Contact Page & Repository Management
 • Created contact page with social media, location, and Phase-II link.
@@ -73,7 +79,7 @@ Sailaja Reddy Nandyala
 ![image_alt](https://github.com/yasaswi200716/Chalo-India/blob/df50549cc1b8d6c1c9c8c358f13e98afef1eb6f0/explore%20US.jpg)
 ![image_alt](https://github.com/yasaswi200716/Chalo-India/blob/af395e60c221c5e38d9111ece0412ac0b0a35242/aboutus.jpg)
 ![image_alt](https://github.com/yasaswi200716/Chalo-India/blob/70fda92d5158cbd3b12b710120971fe18ba47118/subpage.jpg)
-![image_alt](https://github.com/yasaswi200716/Chalo-India/blob/dcde5d5925800113dd0603571ceefc8f21fff9fd/loginpage.jpg)
+![image_alt](https://github.com/yasaswi200716/Chalo-India/blob/4db97beacaa5416b02a0452b0359aa7d451c24dd/loginpage.jpg)
 
 
 
