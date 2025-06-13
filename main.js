@@ -31,6 +31,7 @@ fadeElements.forEach(el => {
   observer.observe(el);
 });
 
+
 // --- Optional: Add "scroll to top" button (basic logic if you create a button) ---
 /*
 const scrollTopBtn = document.getElementById("scrollTop");
@@ -38,3 +39,20 @@ scrollTopBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 */
+document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('Thank you for subscribing!');
+  this.reset();
+});
+window.onscroll = function() {
+  let backToTop = document.querySelector('.back-to-top');
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    backToTop.style.display = 'block';
+  } else {
+    backToTop.style.display = 'none';
+  }
+};
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
