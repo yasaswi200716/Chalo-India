@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pragati+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Plan My Trip - Chalo India</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #e67e22;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .web {
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: 'Yatra One', cursive;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            color: blanchedalmond;
+        }
+
+        .trip-planner {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .trip-planner h1 {
+            font-family: 'Yatra One', cursive;
+            font-size: 32px;
+            color: #e67e22;
+            margin-bottom: 20px;
+        }
+
+        .trip-planner p {
+            font-family: 'Pragati Narrow', sans-serif;
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .trip-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .category {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .category:hover {
+            transform: translateY(-5px);
+        }
+
+        .category h2 {
+            font-family: 'Yatra One', cursive;
+            font-size: 24px;
+            color: #3ab93a;
+            margin-bottom: 10px;
+        }
+
+        .package {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .package h3 {
+            font-family: 'Pragati Narrow', sans-serif;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .package p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .book-now {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #FF9933;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: 'Pragati Narrow', sans-serif;
+            transition: background-color 0.3s ease;
+        }
+
+        .book-now:hover {
+            background-color: #e67e22;
+        }
+
+        .booking-form {
+            margin-top: 40px;
+            background-color: #3ab93a;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .booking-form h2 {
+            font-family: 'Yatra One', cursive;
+            font-size: 28px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .booking-form label {
+            font-family: 'Pragati Narrow', sans-serif;
+            font-size: 16px;
+            color: white;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .booking-form select, .booking-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .booking-form button {
+            padding: 10px 20px;
+            background-color: #FF9933;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Pragati Narrow', sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .booking-form button:hover {
+            background-color: #e67e22;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: snowfall;
+                align-items: flex-start;
+                padding: 15px 20px;
+            }
+
+            .web {
+                font-size: 1.8rem;
+                margin-bottom: 10px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 15px;
+                width: 100%;
+            }
+
+            .trip-categories {
+                grid-template-columns: 1fr;
+            }
+
+            .booking-form {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="web">Chalo India...🛕</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+                <li><a href="home.html#white"><i class="fa-solid fa-magnifying-glass"></i> Explore</a></li>
+                <li><a href="plan-trip.html"><i class="fa-solid fa-map"></i> Plan My Trip</a></li>
+                <li><a href="home.html#green"><i class="fa-solid fa-phone"></i> Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="trip-planner">
+        <h1>Plan Your Dream Trip</h1>
+        <p>Choose from our curated trip categories and packages to explore India your way!</p>
+        <div class="trip-categories">
+            <div class="category">
+                <h2>Solo Trip</h2>
+                <div class="package">
+                    <h3>Himalayan Adventure</h3>
+                    <p>7 days in Manali & Leh - ₹25,000</p>
+                    <a href="#booking-form" class="book-now">Book Now</a>
+                </div>
+                <div class="package">
+                    <h3>Backpacker’s Rajasthan</h3>
+                    <p>5 days in Jaipur & Udaipur - ₹18,000</p>
+                    <a href="#booking-form" class="book-now">Book Now</a>
+                </div>
+            </div>
+            <div class="category">
+                <h2>Family Trip</h2>
+                <div class="package">
+                    <h3>Kerala Backwaters</h3>
+                    <p>6 days in Kochi & Munnar - ₹35,000</p>
+                    <a href="#booking-form" class="book-now">Book Now</a>
+                </div>
+                <div class="package">
+                    <h3>Goa Family Fun</h3>
+                    <p>4 days in Goa - ₹28,000</p>
+                    <a href="#booking-form" class="book-now">Book Now</a>
+                </div>
+            </div>
+            <div class="category">
+                <h2>Group Trip</h2>
+                <div class="package">
+                    <h3>Golden Triangle</h3>
+                    <p>7 days in Delhi, Agra, Jaipur - ₹30,000</p>
+                    <a href="#booking-form" class="book-now">Book Now</a>
+                </div>
+                <div class="package">
+                    <h3>Varanasi Spiritual</h3>
+                    <p>5 days in Varanasi - ₹22,000</p>
+                    <a href="#booking-form" class="book-now">Book Now</a>
+                </div>
+            </div>
+            <div class="category">
+                <h2>Honeymoon</h2>
+                <div class="package">
+                    <h3>Kashmir Romance</h3>
+                    <p>6 days in Srinagar & Gulmarg - ₹40,000</p>
+                    <a href="#booking-form" class="book-now">Book Now</a>
+                </div>
+                <div class="package">
+                    <h3>Andaman Bliss</h3>
+                    <p>5 days in Port Blair & Havelock - ₹38,000</p>
+                    <a href="#booking-form" class="book-now">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="booking-form" id="booking-form">
+            <h2>Book Your Trip</h2>
+            <form id="trip-booking-form">
+                <label for="trip-type">Select Trip Type</label>
+                <select id="trip-type" name="trip-type" required>
+                    <option value="">Choose a category</option>
+                    <option value="Solo Trip">Solo Trip</option>
+                    <option value="Family Trip">Family Trip</option>
+                    <option value="Group Trip">Group Trip</option>
+                    <option value="Honeymoon">Honeymoon</option>
+                </select>
+                <label for="package">Select Package</label>
+                <select id="package" name="package" required>
+                    <option value="">Choose a package</option>
+                    <option value="Himalayan Adventure">Himalayan Adventure - ₹25,000</option>
+                    <option value="Backpacker’s Rajasthan">Backpacker’s Rajasthan - ₹18,000</option>
+                    <option value="Kerala Backwaters">Kerala Backwaters - ₹35,000</option>
+                    <option value="Goa Family Fun">Goa Family Fun - ₹28,000</option>
+                    <option value="Golden Triangle">Golden Triangle - ₹30,000</option>
+                    <option value="Varanasi Spiritual">Varanasi Spiritual - ₹22,000</option>
+                    <option value="Kashmir Romance">Kashmir Romance - ₹40,000</option>
+                    <option value="Andaman Bliss">Andaman Bliss - ₹38,000</option>
+                </select>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('trip-booking-form');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    console.log('Form submitted'); // Debugging log
+                    const tripType = document.getElementById('trip-type').value;
+                    const packageName = document.getElementById('package').value;
+                    const email = document.getElementById('email').value;
+                    const bookingId = 'CHALO' + Math.floor(1000 + Math.random() * 9000);
+                    alert(`Booking Confirmed!\nBooking ID: ${bookingId}\nTrip: ${packageName} (${tripType})\nA confirmation email has been sent to ${email}.\nOur team will contact you soon for further steps.`);
+                    this.reset();
+                });
+            } else {
+                console.error('Form with ID trip-booking-form not found');
+            }
+        });
+    </script>
+</body>
+</html>
