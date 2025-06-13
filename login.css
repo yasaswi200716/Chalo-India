@@ -4,6 +4,10 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-image: url("login.jpg");
   display: flex;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-attachment: fixed;
+  background-size: cover;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -12,10 +16,10 @@ body {
 .container {
   width: 100%;
   max-width: 400px;
-  background: rgba(41, 80, 125, 0.8);
+  background: rgba(255, 249, 247, 0.842);
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(13, 19, 40, 0.1);
 }
 
 h2 {
@@ -39,8 +43,8 @@ input {
 button {
   padding: 12px;
   font-size: 16px;
-  background: #185d8e;
-  color: white;
+  background: #031119;
+  color: rgb(228, 229, 235);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -48,7 +52,7 @@ button {
 }
 
 button:hover {
-  background: #111586;
+  background: #081369;
 }
 
 .toggle {
@@ -57,7 +61,7 @@ button:hover {
 }
 
 .toggle span {
-  color: #0d1553;
+  color: #292a3d;
   cursor: pointer;
   font-weight: bold;
 }
