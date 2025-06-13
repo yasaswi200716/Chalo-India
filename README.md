@@ -71,7 +71,7 @@ Sailaja Reddy Nandyala
 📸 Screenshots
 ![image alt](https://github.com/yasaswi200716/Chalo-India/blob/4c366131ad2d98990027bd895623407ab88eab06/homepage.jpg)
 ![image_alt](https://github.com/yasaswi200716/Chalo-India/blob/df50549cc1b8d6c1c9c8c358f13e98afef1eb6f0/explore%20US.jpg)
-![image_alt](https://github.com/yasaswi200716/Chalo-India/blob/c90ce1433125972612fd74f48387413fda350996/aboutus.jpg)
+![image_alt](https://github.com/yasaswi200716/Chalo-India/blob/af395e60c221c5e38d9111ece0412ac0b0a35242/aboutus.jpg)
 ![image_alt](https://github.com/yasaswi200716/Chalo-India/blob/70fda92d5158cbd3b12b710120971fe18ba47118/subpage.jpg)
 ![image_alt](https://github.com/yasaswi200716/Chalo-India/blob/dcde5d5925800113dd0603571ceefc8f21fff9fd/loginpage.jpg)
 
