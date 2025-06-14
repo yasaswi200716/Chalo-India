@@ -460,3 +460,28 @@ footer p {
     gap: 25px;
   }
 }
+.category-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: #f3f3f3; /* subtle background color change, optional */
+}
+
+.category-card h2,
+.category-card p {
+  transition: color 0.3s ease;
+}
+
+.category-card:hover h2 {
+  color: #1e4b91; /* or any color matching your site's theme */
+}
+
+.category-card:hover p {
+  color: #333; /* darker text for better contrast on hover */
+}
